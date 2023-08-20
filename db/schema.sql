@@ -1,3 +1,6 @@
+-- psql -U postgres -f db/schema.sql
+-- psql -U postgres -f db/seed.sql
+
 DROP DATABASE IF EXISTS yogaposes_dev;
 CREATE DATABASE yogaposes_dev;
 
@@ -11,7 +14,7 @@ CREATE TABLE yogaposes (
  level TEXT,
  sanskrit TEXT,
  instructions TEXT,
- benefits TEXT,
+ benefits VARCHAR,
  website TEXT NOT NULL,
  image_link TEXT,
  is_favorite BOOLEAN
