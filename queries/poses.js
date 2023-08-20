@@ -26,8 +26,8 @@ const getPose = async (id) => {
 const createPose = async (app) => {
   try {
     const newPose = await db.one(
-      "INSERT INTO yogaposes (name, level, sanskit, instructions_link, benefits_link, website, image_link, is_favorite) VALUES($1, $2, $3, $4, $5, $6, $7, $8) RETURNING *",
-      [pose.name, pose.level, pose.sanskrit, pose.instructions_link, pose.benefits_link, pose.website, pose.image_link, pose.is_favorite]
+      "INSERT INTO yogaposes (name, level, sanskit, instructions, benefits, website, image_link, is_favorite) VALUES($1, $2, $3, $4, $5, $6, $7, $8) RETURNING *",
+      [pose.name, pose.level, pose.sanskrit, pose.instructions, pose.benefits, pose.website, pose.image_link, pose.is_favorite]
     );
     return newPose;
   }
@@ -53,7 +53,7 @@ const deletePose = async (id) => {
 const updatePose = async (id, pose) => {
   try {
     const updatedPose = await db.one(
-      "UPDATE yogaposes SET name=$1, level=$2, sanskrit=$3, instructions_link=$4, benefits_link=$5, website=$6, image_link=$7, is_favorite=$8 where id=$9 RETURNING *",
+      "UPDATE yogaposes SET name=$1, level=$2, sanskrit=$3, instructions=$4, benefits=$5, website=$6, image_link=$7, is_favorite=$8 where id=$9 RETURNING *",
       [pose.name, pose.level, pose.sanskrit, pose.instructions_link, pose.benefits_link, pose.website, pose.image_link, pose.is_favorite, id]
     );
     return updatedPose;
