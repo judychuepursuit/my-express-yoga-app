@@ -17,7 +17,7 @@ app.use(express.json());
 
 // ROUTES
 app.get("/", (req, res) => {
-  res.send("Welcome to Yoga Poses App");
+  res.send("Welcome to My Yoga Poses App");
 });
 
 // Pose ROUTES
