@@ -1,6 +1,3 @@
-# my-express-yoga-app
-MOD 4 Portfolio
-
 <html>https://github.com/judychuepursuit  </head>
 
 <!DOCTYPE html>
