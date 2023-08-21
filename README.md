@@ -23,7 +23,7 @@ src=""></img>
 <h3>Yoga Poses App Wire Frame:<h3> 
 <img alt="YOGA APP_WIRE FRAME_TO COME" src="" width="350"></img>
 
-<h2> Here are the Github repository links: social-media-pair-app Back end:</h2>
+<h2> Here are the Github repository links: Yoga-Poses-app:</h2>
       <ul>
         <li>DATABASE_URL: https://github.com/judychuepursuit/my-express-yoga-app</li>
 <br>
