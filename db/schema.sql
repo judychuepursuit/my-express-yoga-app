@@ -13,7 +13,7 @@ CREATE TABLE yogaposes (
  name TEXT NOT NULL,
  level TEXT,
  sanskrit TEXT,
- instructions TEXT,
+ instructions TEXT NOT NULL,
  benefits VARCHAR,
  website TEXT NOT NULL,
  image_link TEXT,

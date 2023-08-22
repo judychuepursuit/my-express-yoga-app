@@ -45,13 +45,18 @@ poses.post("/", checkName, checkWebsite, checkBoolean, async (req, res) => {
 
 // DELETE
 poses.delete("/:id", async (req, res) => {
-  const { id } = req.params;
-  const deletedPose = await deletePose(id);
-  if (deletedPose.id) {
-    res.status(200).json(deletedPose);
+  try {
+    const { id } = req.params;
+    const deletedPose = await deletePose(id);
+    if (deletedPose.id) {
+      res.status(200).json(deletedPose);
+    }
+    else {
+      res.status(404).json("Pose not found!");
+    }
   }
-  else {
-    res.status(404).json("Pose not found!");
+  catch (error) {
+    res.status(500).json({error: error})
   }
 });
 
