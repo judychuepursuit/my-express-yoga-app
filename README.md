@@ -14,15 +14,15 @@ My-Yoga-Poses-App
 
 <h3>Yoga-Poses-INDEX-pg:<h3> 
 <img alt="my-yoga-poses-app Index page" 
-src="src/components/images/frnt_end yoga INDEX.png" width="350"></img>
+src="controller/frnt_end yoga INDEX.png" width="350"></img>
 <br> 
 <h3>Yoga Trello Board:<h3>
 <li><a href="https://trello.com/invite/b/JcA1OfV8/ATTIb167442d5c2a627dfdef4f59ca4fb326891AB3C0/mod-4-my-yoga-app">
 Yoga Trello Board</a></li>
-<img alt="YOGA-TRELLO BOARD" src="src/components/images/yoga- TRELLO.png" width="350"></img>
+<img alt="YOGA-TRELLO BOARD" src="controller/yoga- TRELLO.png" width="550"></img>
 
 <h3>Yoga Poses App Wire Frame:<h3> 
-<img alt="YOGA APP_WIRE FRAME" src="src/components/images/yoga_poses app lab wireframe_8.21.23 2 1.png" width="550"></img>
+<img alt="YOGA APP_WIRE FRAME" src="controller/yoga_poses app lab wireframe_8.21.23 2 1.png" width="550"></img>
 
 <h2> Here are the Github repository links: Yoga-Poses-app::</h2>
       <ul>
